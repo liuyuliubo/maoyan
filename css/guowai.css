@@ -1,0 +1,370 @@
+body{
+  height: auto;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 10;
+}
+/*头部居中包含快*/
+.header-body{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/*左浮动logo*/
+.header-left{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+/*logo旁边城市的设定及位置*/
+.header-left a:last-child{
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+header a{
+    text-decoration: none;
+}
+/*城市两个字样式*/
+.city{
+    color: #676767;
+    display: inline-block;
+    font-size: 15px;
+}
+/*城市下拉图标*/
+.xiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 5.5px;
+    margin-top: 3px;
+}
+/*下拉图标被hover*/
+.header-left a:last-child:hover span:last-child{
+    transform:rotate(180deg);
+
+}
+/*左浮动居中链接*/
+.header-center{
+display: flex;
+  margin-left: 70px;
+    float: left;
+}
+/*每一个链接的样式*/
+.header-center li{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-center>li:nth-child(4){
+    background-color: #ef4339;
+}
+.header-center>li:nth-child(4) a{
+    color: white;
+}
+/*字体样式*/
+.header-center li a{
+    color: #676767;
+    font-size: 18px;
+}
+.header-center li:hover a{
+    color: white;
+}
+.header-center li:hover{
+    background-color: #ef4339;
+}
+/*右浮动头像*/
+.header-right{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+/*搜索栏包含块相对定位*/
+.sousuolan{
+position: relative;
+}
+/*搜索框*/
+.sousuokuang{
+    height: 40px;
+    width: 218px;
+    outline: none;
+    border-radius:44px;
+    border: 1px solid #e3e3e3;
+    background-color: #faf8fa;
+    padding-left: 20px;
+    padding-right: 42px;
+
+}
+/*搜索框提示字体样式*/
+input::-webkit-input-placeholder{
+    color: #e3e3e3;
+}
+/*放大镜样式*/
+.fangdajing{
+    background-color: #ef4339;
+    border-radius: 42px;
+    border: 1px solid #ef4339;
+}
+/*放大镜绝对定位*/
+.sousuolan a{
+    position: absolute;
+    right: 0px;
+    top:1px
+}
+/*人物头像包含块*/
+.renwulan{
+margin-left:20px ;
+}
+/*头像样式*/
+.touxiang{
+    height: 42px;
+}
+/*人物旁下拉箭头*/
+.renwuxiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 4px;
+
+}
+/*箭头被hover时的样式*/
+.renwulan:hover span{
+    transform:rotate(180deg);
+}
+
+
+/*nav链接*/
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #48474b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 81px;
+}
+nav>ol{
+    display: flex;
+    height: 100%;
+}
+nav>ol li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+    height: 100%;
+    justify-content: center;
+}
+nav>ol li:not(:nth-child(5)){
+    margin-right: 77px;
+}
+/*字体样式*/
+nav a{
+    text-decoration: none;
+        font-size: 16px;
+    color: #969898;;
+}
+nav>ol li:hover a{
+    color: #e0433b;
+}
+/*nav链接的下白色三角*/
+.nav-xiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom:0px solid white;
+    display: block;
+    transition: 0.5s;
+    margin-left: 5.5px;
+    margin-top: 3px;
+    position: absolute;
+    bottom: 0px;
+
+}
+/*三角被hover时的样式*/
+nav>ol li:hover p{
+    border-bottom:7px solid white;
+}
+nav>ol li:nth-child(4) a{
+    color: #e0433b;
+}
+nav>ol li:nth-child(4) p{
+    border-bottom:7px solid white;
+}
+
+/*正文*/
+article{
+    width: 990px;
+    margin: auto;
+    height: 2717px;
+}
+/*顶部提示*/
+.article-div-top{
+    width: 100%;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.article-div-span1{
+    color: #969898;
+    font-size: 12px;
+}
+.article-div-span2{
+    color: #ffb902;
+}
+.article-div-span3{
+    color: #969898;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 7px;
+}
+article a{
+text-decoration: none;
+}
+article h2{
+    color: black;
+    font-size: 26px;
+    font-weight:500;
+    margin-bottom: 20px;
+}
+.article-div{
+    height: 233px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.article-div-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.article-div-center{
+height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.article-div-right{
+    width: 682px;
+    height: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shangyingshijian{
+    color: #969898;
+}
+.article-div-right-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.i1{
+    font-size: 16px;
+    color: #ef4339;
+    font-weight:400;
+}
+.i2{
+    font-size:20px;
+    color: #ef4339;
+    font-weight:400;
+}
+.redu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    width: 50px;
+    height: 50px;
+background-color: #ffb402;
+}
+.i3{
+    font-size: 16px;
+    color: #d8d8d8;
+    font-weight:400;
+}
+.i4{
+    font-size:24px;
+    color: #ffb402;
+    font-weight: 900;
+}
+.redu2{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #9a9a9a;
+    width: 50px;
+    height: 50px;
+}
+article>div:last-child{
+    margin-bottom: 115px;
+}
+
+footer{
+    height: 153px;
+    width: 100%;
+    background-color: #282628;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+footer span{
+    font-size: 13px;
+    color: #676767;
+}
+
+.dingwei{
+    position: absolute;
+    right: 0px;
+    bottom:300px ;
+}
+
+
+/*body:hover{*/
+    /*transform:rotate(36000000deg);*/
+    /*transition: 100s;*/
+
+/*}*/
+
+
+
+
+
+

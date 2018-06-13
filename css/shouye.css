@@ -1,0 +1,843 @@
+/*头部*/
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 10;
+}
+/*头部居中包含快*/
+.header-body{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/*左浮动logo*/
+.header-left{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+/*logo旁边城市的设定及位置*/
+.header-left a:last-child{
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+header a{
+    text-decoration: none;
+}
+/*城市两个字样式*/
+.city{
+    color: #676767;
+    display: inline-block;
+    font-size: 15px;
+}
+/*城市下拉图标*/
+.xiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 5.5px;
+    margin-top: 3px;
+}
+/*下拉图标被hover*/
+.header-left a:last-child:hover span:last-child{
+    transform:rotate(180deg);
+
+}
+/*左浮动居中链接*/
+.header-center{
+    display: flex;
+    margin-left: 70px;
+    float: left;
+}
+/*每一个链接的样式*/
+.header-center li{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-center>li:nth-child(1){
+background-color: #ef4339;
+}
+.header-center>li:nth-child(1) a{
+color: white;
+}
+/*字体样式*/
+.header-center li a{
+    color: #676767;
+    font-size: 18px;
+}
+.header-center li:hover a{
+    color: white;
+}
+.header-center li:hover{
+    background-color: #ef4339;
+}
+/*右浮动头像*/
+.header-right{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+/*搜索栏包含块相对定位*/
+.sousuolan{
+    position: relative;
+}
+/*搜索框*/
+.sousuokuang{
+    height: 40px;
+    width: 218px;
+    outline: none;
+    border-radius:44px;
+    border: 1px solid #e3e3e3;
+    background-color: #faf8fa;
+    padding-left: 20px;
+    padding-right: 42px;
+
+}
+/*搜索框提示字体样式*/
+input::-webkit-input-placeholder{
+    color: #e3e3e3;
+}
+/*放大镜样式*/
+.fangdajing{
+    background-color: #ef4339;
+    border-radius: 42px;
+    border: 1px solid #ef4339;
+}
+/*放大镜绝对定位*/
+.sousuolan a{
+    position: absolute;
+    right: 0px;
+    top:1px
+}
+/*人物头像包含块*/
+.renwulan{
+    margin-left:20px ;
+}
+/*头像样式*/
+.touxiang{
+    height: 42px;
+}
+/*人物旁下拉箭头*/
+.renwuxiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 4px;
+}
+/*箭头被hover时的样式*/
+.renwulan:hover span{
+    transform:rotate(180deg);
+}
+
+/*专访导演-*/
+.zhuanfangdaoyan{
+    /*width: 100%;*/
+    /*width: 1600px;*/
+    /*margin: auto;*/
+    margin-top: 80px;
+    position: relative;
+}
+.zhuanfangdaoyan1 img{
+    /*width: 1600px;*/
+    width: 100%;
+    height: 450px;
+}
+.zhuanfangdaoyan2{
+    width: 80%;
+    /*margin: auto;*/
+    /*width: 1113px;*/
+    height: 123px;
+    /*box-sizing: border-box;*/
+    position: absolute;
+    bottom: -54px;
+    left: 217px;
+
+}
+.zhuanfangdaoyan2-1{
+    /*width: 1113px;*/
+    width: 80%;
+    height: 123px;
+    /*border: 1px solid #9dff92;*/
+    background-color: white;
+
+}
+.zhuanfangdaoyan2-2{
+    /*width: 993px;*/
+    width: 93%;
+    height: 123px;
+    display: flex;
+    /*justify-content: space-between;*/
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+.zhuanfangdaoyan2-2 img{
+    margin-right: 10px;
+    border: 1px solid red;
+    width: 151px;
+    height: 123px;
+}
+.zhuanfangdaoyan2-3 li:nth-child(1) i{
+    width: 17px;
+    height: 31px;
+    background-image: url("../img/shouye.png");
+    background-position: -1474px -500px;
+    position: absolute;
+    right: 221px;
+    top: 56px;
+}
+.zhuanfangdaoyan2-3 li:nth-child(2) i{
+    width: 17px;
+    height: 31px;
+    background-image: url("../img/shouye.png");
+    background-position: -415px -500px;
+    position: absolute;
+    left: 4px;
+    top: 56px;
+}
+.zhuanfangdaoyan2 img:hover{
+    transition: all linear 0.5s;
+    box-shadow: 2px 2px 3px 2px green;
+}
+.zhuanfangdaoyan2 li:hover i{
+    transition: all linear 0.5s;
+    box-shadow: 2px 3px 3px 2px red;
+}
+/*内容区*/
+section{
+    width: 1200px;
+    margin: auto;
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+.zuo{
+    width: 752px;
+}
+/*一行*/
+.yihang{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.yihang1{
+    font-size: 30px;
+}
+.yihang2{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.yihang i{width: 13px;
+    height: 18px;
+    background-image:url("../img/shouye.png");
+    background-position: -1100px -658px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+/*第二行*/
+a{  color: #f7f7f7;
+    text-decoration: none;
+}
+.dierhang{
+    margin-top: 30px;
+    width: 752px;
+   height: 266px;
+    display: flex;
+    justify-content: space-between;
+}
+.dierhang  li:nth-child(2) img{
+    width: 167px;
+    height: 224px;
+}
+.dierhang1,.dierhang2,.dierhang3,.dierhang4{
+    position: relative;
+}
+.dierhang1 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhang2 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhang3 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhang4 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhang1 li:nth-child(3),.dierhang2 li:nth-child(3),.dierhang3 li:nth-child(3),.dierhang4 li:nth-child(3){
+    position: absolute;
+    bottom: 50px;
+    margin-left: 15px;
+}
+.dierhang1 li:nth-child(4),.dierhang2 li:nth-child(4),.dierhang3 li:nth-child(4),.dierhang4 li:nth-child(4){
+   text-align: center;
+    color: red;
+    margin-top: 15px;
+}
+.dierhang span{
+    margin-left: 25px;
+    color: #e0a907;
+}
+.dierhang li:nth-child(4):hover{
+     transition: all linear 0.5s;
+     color: #495aff;
+     background-color: #6fff46;
+ }
+.dierhang li:hover img{
+    transition: all linear 1s;
+    box-shadow: 3px 2px 2px 2px darkorange;
+}
+
+
+/*即将上映*/
+.jijiangshnagying{
+    margin-top: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.jijiangshangying1{
+    font-size: 30px;
+    color: #aed8fa;
+}
+.jijiangshangying2{
+    margin-right: 20px;
+    font-size: 16px;
+    color: #aed8fa;
+}
+.jijiangshnagying i{width: 13px;
+    height: 18px;
+    background-image:url("../img/shouye.png");
+    background-position: -1100px -658px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+/*即将上映电影*/
+a{  color: #f7f7f7;
+    text-decoration: none;
+}
+.jijiangshangyingdianying{
+    margin-top: 30px;
+    width: 752px;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+.jijiangshangyingdianying  li:nth-child(2) img{
+    width: 167px;
+    height: 224px;
+}
+.jijiangshangyingdianying1,.jijiangshangyingdianying2,.jijiangshangyingdianying3,.jijiangshangyingdianying4{
+    position: relative;
+}
+.jijiangshangyingdianying2 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.jijiangshangyingdianying1 li:nth-child(3),.jijiangshangyingdianying2 li:nth-child(3),.jijiangshangyingdianying3 li:nth-child(3),.jijiangshangyingdianying4 li:nth-child(3){
+    position: absolute;
+    bottom: 122px;
+    margin-left: 15px;
+}
+.jijiangshangyingdianying1 li:nth-child(4),.jijiangshangyingdianying2 li:nth-child(4),.jijiangshangyingdianying3 li:nth-child(4),.jijiangshangyingdianying4 li:nth-child(4){
+     color: #e0a907;
+     margin-top: 15px;
+ }
+.jijiangshangyingdianying1 li:nth-child(6),.jijiangshangyingdianying2 li:nth-child(6),.jijiangshangyingdianying3 li:nth-child(6),.jijiangshangyingdianying4 li:nth-child(6){
+ text-align: center;
+}
+.jijiangshangyingdianying1 li:nth-child(5),.jijiangshangyingdianying2 li:nth-child(5),.jijiangshangyingdianying3 li:nth-child(5),.jijiangshangyingdianying4 li:nth-child(5){
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 2px dashed #efefef;
+    border-left: 2px dashed #efefef;
+}
+.jijiangshangyingdianying1 li:nth-child(5) p,.jijiangshangyingdianying2 li:nth-child(5) p,.jijiangshangyingdianying3 li:nth-child(5) p,.jijiangshangyingdianying4 li:nth-child(5) p{
+     width: 80px;
+     text-align: center;
+     border-right: 2px dashed #efefef;
+ }
+.jijiangshangyingdianying1  p:nth-child(1),.jijiangshangyingdianying2  p:nth-child(1),.jijiangshangyingdianying3  p:nth-child(1),.jijiangshangyingdianying4  p:nth-child(1){
+    border-right: 2px dashed #efefef;
+}
+.jijiangshangyingdianying1 li:nth-child(6),.jijiangshangyingdianying2 li:nth-child(6),.jijiangshangyingdianying3 li:nth-child(6),.jijiangshangyingdianying4 li:nth-child(6) {
+  margin-top: 15px;
+}
+.jijiangshangyingdianying p:nth-child(2):hover {
+     color: #8999f4;
+     background-color: red;
+ }
+.jijiangshangyingdianying p:nth-child(1):hover {
+    color: #f48b59;
+    background-color: #5bffb8;
+}
+.jijiangshangyingdianying li:hover img{
+ border-radius: 30px 30px;
+    transition: all linear 0.5s;
+}
+/*热播电影*/
+.rebo{
+    margin-top: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.rebo1{
+    color: red;
+    font-size: 30px;
+}
+.rebo1>span{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #282628;
+}
+.rebo2{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.rebo i{width: 13px;
+    height: 18px;
+    background-image:url("../img/shouye.png");
+    background-position: -1100px -658px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+/*电影*/
+.rebodianying{
+    margin-top: 30px;
+    width: 752px;
+    height: 266px;
+    display: flex;
+    justify-content: space-between;
+}
+.rebodianying li:nth-child(2) img{
+    width: 167px;
+    height: 224px;
+}
+.rebodianying1  li:nth-child(2) img{
+    width: 358px;
+    height: 231px;
+}
+.rebodianying1,.rebodianying2,.rebodianying3{
+    position: relative;
+}
+.rebodianying1 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.rebodianying2 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.rebodianying1 li:nth-child(3),.rebodianying2 li:nth-child(3),.rebodianying3 li:nth-child(3){
+    position: absolute;
+    color: #e0a907;
+    bottom: 50px;
+    margin-left: 15px;
+}
+.rebo span:hover{
+    background-color: red;
+    color: white;
+
+}
+/*热播电影*/
+.dierhangg{
+    width: 752px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.dierhangg  li:nth-child(2) img{
+    width: 167px;
+    height: 224px;
+}
+.dierhangg1,.dierhangg2,.dierhangg3,.dierhangg4{
+    position: relative;
+}
+.dierhangg1 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhangg2 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhang3 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhangg4 li:nth-child(1) img{
+    position: absolute;
+    left: -4px;
+}
+.dierhangg1 li:nth-child(3),.dierhangg2 li:nth-child(3),.dierhangg3 li:nth-child(3),.dierhangg4 li:nth-child(3){
+    position: absolute;
+    bottom: 50px;
+    margin-left: 15px;
+}
+.dierhangg1 li:nth-child(4),.dierhangg2 li:nth-child(4),.dierhangg3 li:nth-child(4),.dierhangg4 li:nth-child(4){
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+}
+/*右边*/
+.you{
+    width: 360px;
+}
+.jiripiaofang{
+    color: red;
+    font-size: 30px;
+    height: 50px;
+}
+.you ul:hover{
+    background-color: #495aff;
+}
+.you ul:hover a{
+    color: chartreuse;
+}
+/*今日票房*/
+.jixieshi{
+    display: flex;
+    position: relative;
+}
+.jixieshi1>img{
+    width: 124px;
+    height: 82px;
+}
+.jixieshi2{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.jixieshi2>p:nth-child(1){
+   font-size: 25px;
+}
+.jixieshi2>p:nth-child(2){
+    margin-top: 10px;
+    color: red;
+}
+.jixieshi1>i{
+    width: 22px;
+    height: 25px;
+    background-image:url("../img/sprite_webpage.png");
+    background-position: -27px -84px;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.youer a{
+    color: #282628;
+}
+.youer>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.youer>ul>li:nth-child(2){
+    color: red;
+}
+.youer span{
+  color: red;
+    margin-right: 10px;
+}
+.youerr a{
+    color: #282628;
+}
+.youerr>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.youerr>ul>li:nth-child(2){
+    color: red;
+}
+.youerr span{
+    font-style: oblique;
+    margin-right: 10px;
+}
+/**/
+/*今日大盘*/
+.jinridapan{
+    margin-top: 35px;
+    display: flex;
+    height: 105px;
+    background-color: #fdfdfd;
+}
+.jinridapan1{
+    padding: 5px 11px;
+    font-size: 18px;
+    width: 40px;
+    color: white;
+    background-color: red;
+    box-sizing: border-box;
+}
+.jinridapan2{
+    width: 700px;
+  margin-left: 15px;
+    position: relative;
+}
+.jinridapan2-1 a{
+    color: red;
+}
+.jinridapan2-1>ul{
+
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.jinridapan2-1>ul>li:nth-child(1){
+  font-size: 30px;
+}
+.jinridapan2-1>ul>li:nth-child(2){
+   margin-right: 20px;
+}
+.jinridapan2-12{
+    margin-top: 15px;
+}
+.jinridapan2-1 i{
+    width: 13px;
+    height: 24px;
+    background-image: url("../img/shouye.png");
+    background-position: -1526px -1181px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.jinridapan2-1>ul>li:hover a{
+    transition: all linear 0.5s;
+    color: #a9ff43;
+}
+.zuishouqidai{
+    margin-top: 75px;
+    height: 35px;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+
+}
+.zuishouqidai1{
+    font-size: 30px;
+    color: #fac323;
+}
+.zuishouqidai2{
+    color: #fac323;
+    margin-right: 20px;
+}
+.zuishouqidai2>i{
+    width: 13px;
+    height: 25px;
+    background-image: url("../img/shouye.png");
+    background-position: -1538px -1343px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+.sanshengsanshi{
+    width: 345px;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+.sanshengsanshi>img{
+    width: 345px;
+    height: 200px;
+}
+.sanshengsanshi>i{
+    width: 22px;
+    height: 25px;
+    background-image: url("../img/sprite_webpage.png");
+    background-position: 0 -84px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.qiyibo{
+    margin-top: 20px;
+    height: 186px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.qiyibo img{
+    width: 172px;
+    height: 123px;
+    margin-bottom: 10px;
+}
+
+.qiyibo1> p:first-child{
+    width: 22px;
+    height: 22px;
+    font-style: oblique;
+    color: white;
+    background-color: #fac92e;
+    position: absolute;
+    top: 0px;
+}
+.qiyibo2> p:first-child{
+    width: 22px;
+    height: 22px;
+    font-style: oblique;
+    color: white;
+    background-color: #fac92e;
+    position: absolute;
+    top: 0px;
+}
+
+.qiyibo1> p:last-child{
+    color:  #fac92e;
+    margin-top: 15px;
+}
+.qiyibo2> p:last-child{
+    margin-top: 15px;
+    color:  #fac92e;
+}
+/*你的名字*/
+.nidemingzi a{
+    color: #282628;
+}
+.nidemingzi>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nidemingzi>ul>li:nth-child(2){
+    color: #fec502;
+}
+.nidemingzi span{
+    color: #463338;
+    margin-right: 10px;
+}
+.nidemingzi a{
+    color: #282628;
+}
+.nidemingzi>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nidemingzi>ul>li:nth-child(2){
+    color: #faba07;
+}
+.nidemingzi span{
+    font-style: oblique;
+    margin-right: 10px;
+}
+/*霸王别姬*/
+.bawangbeiji{
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+}
+.bawangbeiji1>img{
+    width: 124px;
+    height: 82px;
+}
+.bawangbeiji2{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.bawangbeiji2>p:nth-child(1){
+    font-size: 25px;
+}
+.bawangbeiji2>p:nth-child(2){
+    margin-top: 10px;
+    color: #ffc50e;
+}
+.bawangbeiji1>i{
+    width: 22px;
+    height: 25px;
+    background-image:url("../img/sprite_webpage.png");
+    background-position: -27px -84px;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+
+.xiaokedejiuyuan a{
+    color: #282628;
+}
+.xiaokedejiuyuan>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.xiaokedejiuyuan>ul>li:nth-child(2){
+    color: #ffc602;
+}
+.xiaokedejiuyuan span{
+    color: #ffc50e;
+    margin-right: 10px;
+}
+.xiaokedejiuyuan a{
+    color: #282628;
+}
+.xiaokedejiuyuan>ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.xiaokedejiuyuan>ul>li:nth-child(2){
+    color: #fac53c;
+}
+.xiaokedejiuyuan span{
+    font-style: oblique;
+    margin-right: 10px;
+}
+/*尾部*/
+.maoyandianying{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 105px;
+    color: #676767;
+    background-color: #282628;
+}
+.maoyandianying1{
+    transition: all ;
+    padding-top: 60px;
+}
+.maoyandianying span:hover{
+    color: #f46258;
+    background-color: #d8d8d8;
+}
+.maoyandianying2{
+    padding-top: 10px;
+}
+
+
+
+
+

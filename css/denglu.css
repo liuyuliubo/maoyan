@@ -1,0 +1,146 @@
+.maoyan{
+    width: 875px;
+    height:125px;
+  margin: auto;
+    line-height: 125px;
+}
+.maoyan>img{
+    width: 237px;
+    height: 50px;
+}
+/*logo效果显示*/
+/*.maoyan>img:hover{*/
+ /*opacity: 0;*/
+/*}*/
+/*内容区*/
+.tubiao{
+    width: 875px;
+    height: 356px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tubiao2{
+    width: 287px;
+    height: 356px;
+}
+.yipai{padding-top: 44px;
+position: relative}
+input{
+    width: 280px;
+    height: 40px;
+}
+a{
+    color: #676767;
+    text-decoration: none;
+}
+.tubiao1>img{
+    width: 417px;
+    height: 356px;
+}
+.yipai>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.sipai>ul{
+    display: flex;
+    justify-content: space-between;
+}
+input[type="button"]{
+    width: 284px;
+    height: 36px;
+    color: white;
+    background-color: #e53237;
+}
+.liupai>ul{
+    display: flex;
+}
+input[type="text"]{
+  text-indent: 30px;
+}
+input[type="password"]{
+    text-indent: 30px;
+}
+.erpai{
+    padding-top: 15px;
+    position: relative;
+}
+.erpai>img{
+    position: absolute;
+    left: 10px;
+    top: 28px;
+}
+.sanpai{
+    padding-top: 15px;
+    position: relative;
+}
+.sanpai>img{
+    position: absolute;
+    left: 10px;
+    top: 28px;
+}
+.yipai li:nth-child(2){
+    margin-right: 20px;
+}
+.yipai i{
+    width: 13px;
+    height: 13px;
+    background-image:url("../img/sprite_webpage.png");
+    background-position: -14px -59px;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+.sipai{
+    position: relative;
+}
+.sipai li:nth-child(1){
+   margin-left: 20px;
+}
+.sipai li:last-child a{
+    color: red;
+}
+.yipai li:last-child:hover a{
+    color: white;
+    background-color: red;
+}
+.sipai li:hover a{
+    color: white;
+    background-color: red;
+}
+.liupai li:last-child a{
+    color: red;
+}
+.liupai li:hover a{
+    color: white;
+    background-color: red;
+}
+.sipai i{
+    width: 16px;
+    height: 16px;
+    background-image:url("../img/denglu.png");
+    background-position: -1064px -287px;
+    position: absolute;
+    left: 3px;
+}
+.sipai{
+    margin-top: 10px;
+}
+.wupai{
+    margin-top: 15px;
+}
+.liupai{
+    padding-top: 15px;
+}
+/*尾部*/
+.weibu{
+    height: 100px;
+    text-align: center;
+}
+.weibu>p{
+    color: #cccccc;
+    padding-top: 80px;
+}
+.weibu>p:hover{
+    color: red;
+}

@@ -1,0 +1,776 @@
+/*头部*/
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 10;
+}
+/*头部居中包含快*/
+.header-body{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/*左浮动logo*/
+.header-left{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+/*logo旁边城市的设定及位置*/
+.header-left a:last-child{
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+header a{
+    text-decoration: none;
+}
+/*城市两个字样式*/
+.city{
+    color: #676767;
+    display: inline-block;
+    font-size: 15px;
+}
+/*城市下拉图标*/
+.xiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 5.5px;
+    margin-top: 3px;
+}
+/*下拉图标被hover*/
+.header-left a:last-child:hover span:last-child{
+    transform:rotate(180deg);
+
+}
+/*左浮动居中链接*/
+.header-center{
+    display: flex;
+    margin-left: 70px;
+    float: left;
+}
+/*每一个链接的样式*/
+.header-center li{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.header-center>li:nth-child(2){*/
+    /*background-color: #ef4339;*/
+/*}*/
+/*.header-center>li:nth-child(2) a{*/
+    /*color: white;*/
+/*}*/
+/*字体样式*/
+.header-center li a{
+    color: #676767;
+    font-size: 18px;
+}
+.header-center li:hover a{
+    color: white;
+}
+.header-center li:hover{
+    background-color: #ef4339;
+}
+/*右浮动头像*/
+.header-right{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+/*搜索栏包含块相对定位*/
+.sousuolan{
+    position: relative;
+}
+/*搜索框*/
+.sousuokuang{
+    height: 40px;
+    width: 218px;
+    outline: none;
+    border-radius:44px;
+    border: 1px solid #e3e3e3;
+    background-color: #faf8fa;
+    padding-left: 20px;
+    padding-right: 42px;
+
+}
+/*搜索框提示字体样式*/
+input::-webkit-input-placeholder{
+    color: #e3e3e3;
+}
+/*放大镜样式*/
+.fangdajing{
+    background-color: #ef4339;
+    border-radius: 42px;
+    border: 1px solid #ef4339;
+}
+/*放大镜绝对定位*/
+.sousuolan a{
+    position: absolute;
+    right: 0px;
+    top:1px
+}
+/*人物头像包含块*/
+.renwulan{
+    margin-left:20px ;
+}
+/*头像样式*/
+.touxiang{
+    height: 42px;
+}
+/*人物旁下拉箭头*/
+.renwuxiala{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:5px solid  #676767;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 4px;
+
+}
+/*箭头被hover时的样式*/
+.renwulan:hover span{
+    transform:rotate(180deg);
+}
+
+
+
+/*内容区*/
+section{
+    width:950px ;
+    margin: auto;
+    /*border: 1px solid blue;*/
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+/*右边*/
+.neirongqu2{
+    width: 110px;
+}
+.neirongqu2 img{
+    width: 108px;
+    height: 150px
+}
+.neirongqu2>img{
+    width: 108px;
+    height: 149px;
+    padding-bottom: 13px;
+}
+.neirongqu2>p{
+    text-indent: 20px;
+    border-left: 3px solid #ffb99f;
+    margin-bottom: 23px;
+}
+.neirongqu2>div{
+    text-align: center;
+    color: #ffd99f;
+    font-style:oblique;
+}
+figure{
+    text-align: center;
+}
+/*左边*/
+.neirong{
+    width: 740px;
+}
+/*专访导演郭敬明*/
+.neirongqu>p{
+    font-size: 36px;
+    width: 708px;
+    /*border: 1px solid greenyellow;*/
+}
+/*猫眼电影*/
+.maoyan{
+    margin-top: 30px;
+    display: flex;
+    color: #ccc7c4;
+}
+.maoyan2{
+    margin: 0px 15px;
+}
+/*郭敬明文字*/
+.goujingming{
+    font-size: 18px;
+    margin-top: 45px;
+}
+/*头像*/
+.goujm{
+    width: 743px;
+    height: 502px;
+    margin-top: 23px;
+}
+.goujm>img{
+    width: 743px;
+    height: 502px;
+}
+/*导演*/
+.daoyan>p{
+    margin-top: 36px;
+    font-size: 18px;
+}
+/*挑战*/
+.tiaozhan{
+    margin-top: 60px;
+    font-size: 30px;
+    color: red;
+}
+/*猫眼电影*/
+.maoyandian{
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*筹备爵迹*/
+.choubeijueji>p{
+    margin-top: 36px;
+    font-size: 18px;
+}
+/*全GC*/
+.choubeijueji>p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+/*全GC图片*/
+.quanGCtupian{
+    width: 743px;
+    height: 262px;
+    margin-top: 35px;
+}
+.quanGCtupian>img{
+    width: 743px;
+    height: 262px;
+}
+/*动作剪辑*/
+.dongzuojianji{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*所以当时*/
+.suoyidangshi>p{
+     margin-top: 50px;
+     font-size: 18px;
+ }
+.suoyidangshi span{
+   color: red;
+}
+/*猫眼电影说道*/
+.maoyandianyingshuodao{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*郭敬明说到*/
+.goujinmingshuodao>p{
+    margin-top: 35px;
+    font-size: 18px;
+}
+/*猫眼电影用了两年时间*/
+.dianyingyonglliannina{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*郭敬明：太多太多困难*/
+.taiduotaiduo>p{
+    margin-top: 37px;
+    font-size: 18px;
+}
+/*其次*/
+.qici>p{
+    margin-top: 37px;
+    font-size: 18px;
+}
+/*爵迹图片*/
+.jujii{
+    width: 605px;
+    height: 252px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.jujii>img{
+    width: 605px;
+    height: 252px;
+}
+/*《的迹》这个电影*/
+.jj>p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+/*我们之前做的*/
+.wmzhiian>p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+/*图片*/
+.tt{
+    width: 605px;
+    height: 254px;
+    margin: auto;
+    margin-top: 30px;
+}
+.tt>img{
+    width: 605px;
+    height: 254px;
+}
+/*因为城市*/
+.yingweichengshi>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.yingweichengshi span{
+    color: red;
+}
+/*猫眼电影:光的预告片中*/
+.baoguang{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*打斗简单*/
+.dadoujiandan>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*打斗图片*/
+.dadoutupian{
+    width: 250px;
+    height: 172px;
+    margin: auto;
+    margin-top: 30px;
+}
+.dadoutupian>img{
+    width: 250px;
+    height: 172px;
+}
+/*因为头发*/
+.yinweitoufa>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.yinweitoufa span{
+    color: red;
+}
+/*火山*/
+.huoshang{
+    width: 364px;
+    height: 244px;
+    margin: auto;
+    margin-top: 30px;
+}
+.huoshang>img{
+    width: 364px;
+    height: 244px;
+}
+/*描眠电影:在之前*/
+.zaizhezhiqian{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*的长头更疯狂*/
+.changfagengfengkuang>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.changfagengfengkuang span{
+    color: red;
+}
+/*还有一个镜头*/
+.haiyouyigejingtou>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*端电影:大家对CG*/
+.duandianying{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*郭数明:CG电和0把电一个大的*/
+.shipaidianying>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.shipaidianying span{
+    color: red;
+}
+/*图片*/
+.juejijitu{
+    width: 605px;
+    height: 262px;
+    margin: auto;
+    margin-top: 30px;
+}
+.juejijitu>img{
+    width: 605px;
+    height: 262px;
+}
+/*第一版预告片中大家提到*/
+.diyiciyugaopian>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*选择大量明星加盟*/
+.daliangmingxing{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*部敬明;我觉得其实每一个导演*/
+
+.meiyigedaoyan>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*图片*/
+.duooreentupian{
+    width: 605px;
+    height: 262px;
+    margin: auto;
+    margin-top: 30px;
+}
+.duooreentupian>img{
+    width: 605px;
+    height: 262px;
+}
+/*你不能说*/
+.nibunengshuo>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.nibunengshuo span{
+    color: red;
+}
+/*改变*/
+.gaibian{
+    margin-top: 60px;
+    font-size: 30px;
+    color: red;
+}
+/*从作家*/
+.congzuojia{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*我其实*/
+.woqishidu>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*图片图片*/
+.tupiantupian{
+    display: flex;
+    justify-content: space-between;
+}
+.tupiantupian img{
+     width: 167px;
+     height: 262px;
+ }
+.tupiantupian img:hover{
+ border-radius: 50px;
+    transition: all linear 1s;
+    box-shadow: 2px 2px 1px 3px green;
+}
+/*小时代*/
+.xiaoshidai{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*人物*/
+.nibunengshuo>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.nibunengshuo span{
+    color: red;
+}
+/*(攻/糖小排)*/
+.tangchu>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+/*手赞*/
+.shouzhan{
+    height: 150px;
+   padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.shouzhan1,.shouzhan2{
+    width: 79px;
+    height: 51px;
+    border: 1px solid red;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 51px;
+    margin-right: 20px;
+}
+.shouzhan1{
+    display: flex;
+}
+.shouzhan1>input[type="checkbox"]{
+    display: none;
+}
+.shouzhan1>label{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+label[for="nobby"]>i{
+    display: none;
+}
+input[type="checkbox"]:checked +label>b>img{
+    display: none;
+}
+input[type="checkbox"]:checked+label>i{
+    display: inline-block;
+}
+/*热门评论*/
+.remenpinlun{
+    margin-left: 10px;
+    border-left:3px solid red ;
+    margin-bottom: 25px;
+    margin-top: 55px;
+}
+/*评论区*/
+.piaolan{
+    display: flex;
+    height: 135px;
+    margin-top: 30px;
+    /*justify-content: space-between;*/
+}
+.piaolan1{
+    width: 65px;
+    position: relative;
+}
+.piaolan1>img:nth-child(2){
+    position: absolute;
+    left: 30px;
+    top: 28px;
+}
+.piaolan2{
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+}
+.piaolan2-2-2>img{
+    position: absolute;
+    right: 36px;
+    top: 58px;
+}
+.piaolan2-1 li:not(:nth-child(1)){
+    font-size: 12px;
+    color: #a6a6a6;
+}
+.piaolan2-1 li:nth-child(3){
+    margin-top: 20px;
+}
+.piaolan2-2{
+    width: 55px;
+    height: 135px;
+    line-height: 135px;
+    display: flex;
+}
+.piaolan2-2-2>img{
+    opacity: 0;
+}
+.piaolan2-2:hover img:nth-child(1){
+    opacity: 0;
+}
+.piaolan2-2:hover .piaolan2-2-2>img{
+    opacity: 1;
+}
+
+/*淮安*/
+.huaian{
+    display: flex;
+    height: 135px;
+    margin-top: 30px;
+    /*justify-content: space-between;*/
+}
+.huaian1{
+    width: 65px;
+    position: relative;
+}
+.huaian1>i{
+    width: 22px;
+    height: 26px;
+    background-image:url("../img/zixun.png");
+    background-position: -380px -8151px;
+    position: absolute;
+    left: 30px;
+    top: 28px;
+}
+.huaian2{
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+}
+.huaian2-2-2>img{
+    position: absolute;
+    right: 36px;
+    top: 58px;
+}
+.huaian2-1 li:not(:nth-child(1)){
+    font-size: 12px;
+    color: #a6a6a6;
+}
+.huaian2-1 li:nth-child(3){
+    margin-top: 20px;
+}
+.huaian2-2{
+    width: 55px;
+    height: 135px;
+    line-height: 135px;
+    display: flex;
+}
+.huaian2-2-2>img{
+    opacity: 0;
+}
+.huaian2-2:hover img:nth-child(1){
+    opacity: 0;
+}
+.huaian2-2:hover .huaian2-2-2>img{
+    opacity: 1;
+}
+/*宜昌*/
+.yichang{
+    display: flex;
+    height: 270px;
+    margin-top: 30px;
+    /*justify-content: space-between;*/
+}
+.yichangq1{
+    width: 65px;
+    position: relative;
+}
+.yichangq1>i{
+    width: 22px;
+    height: 26px;
+    background-image:url("../img/zixun.png");
+    background-position: -380px -8151px;
+    position: absolute;
+    left: 30px;
+    top: 28px;
+}
+.yichang2{
+    border-bottom: 1px solid #e7e7e7;
+}
+.piaolan2yipai{
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    position: relative;
+
+}
+.yichang2-2-2>img{
+    position: absolute;
+    right: 17px;
+    top: 58px;
+}
+.yichang2-1 li:not(:nth-child(1)){
+    font-size: 12px;
+    color: #a6a6a6;
+}
+.yichang2-1 li:nth-child(3){
+    margin-top: 20px;
+}
+.yichang2-2{
+    margin-left: 143px;
+    width: 100px;
+    height: 135px;
+    line-height: 135px;
+    display: flex;
+}
+.yichang2-2-2>img{
+    opacity: 0;
+}
+.yichang2-2:hover img:nth-child(1){
+    opacity: 0;
+}
+.yichang2-2:hover .yichang2-2-2>img{
+    opacity: 1;
+}
+.erpai{
+    width: 667px;
+    height: 109px;
+    background-color: #eeeeee;
+    font-size: 14px;
+}
+.huif{
+    padding-top: 20px;
+}
+.diansj{
+    padding-top: 12px;
+}
+/*查看更多回复*/
+.chakangengduo{
+    height: 200px;
+}
+.chakangengduo1{
+    text-align: center;
+}
+.huaian{
+    display: none;
+}
+.chakangengduo1>input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked+label>img{
+    transform: rotate(180deg);
+}
+input[type="checkbox"]:checked +label>.huaian{
+    display: block;
+}
+/*尾部*/
+.maoyandianying{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 105px;
+    color: #676767;
+    background-color: #282628;
+}
+.maoyandianying1{
+    transition: all ;
+    padding-top: 60px;
+}
+.maoyandianying span:hover{
+    color: #f46258;
+    background-color: #d8d8d8;
+}
+.maoyandianying2{
+    padding-top: 10px;
+}
